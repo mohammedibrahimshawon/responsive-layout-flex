@@ -10,8 +10,9 @@ img{
 }
 
 .vcollage{
-    height: 50%;
+    /* height: 50%; */
     /* width: 100%; */
+    height: calc((100%-5px)/2);
 }
 .row > div{
     flex: 1;
@@ -21,4 +22,25 @@ img{
     grid-template-columns: repeat(2,1fr);
     gap: 5px;
 
+}
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+
+    }
+    .squarecollage{
+        grid-template-columns: 1fr;
+    }
+    
+}
+/* medium devices */
+@media screen and (min-width:576px) and (max-width: 992px) {
+
+       .row{
+        flex-direction: column;
+        height: auto;
+
+    }
 }
