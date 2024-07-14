@@ -9,3 +9,16 @@ img{
     margin-bottom: 5px;
 }
 
+.vcollage{
+    height: 50%;
+    /* width: 100%; */
+}
+.row > div{
+    flex: 1;
+}
+.squarecollage{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+
+}
